@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Duana Laurent">
+    <meta name="description" content="Front-end design for Weather API">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c01d9a5d10.js" crossorigin="anonymous"></script>
+    
+    <title>Weather API</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Enter city name">
+    
+            <button> 
+                <i id="search-icon" class="fa-regular fa-magnifying-glass"></i> 
+            </button>
+    
+        </div>
+
+        <div class="city-photo-wrapper">
+            <img class="city-photo" src="">
+        </div>
+
+        <div class="weather">
+            <div class="weather-info">
+
+                <div class="main-details">
+
+                    <img src="images/cloud-sun.png" class="weather-icon" alt="Icon depicting rain">
+
+                    <h1 class="temp">27°C</h1>
+                    <h2 class="city">Toronto</h2>
+
+                    <div class="feels-like" class="row">
+                        <p>Feels like</p>
+                        <p class="feels">17°C</p>
+                    </div>
+            
+                </div>
+
+                <div class="secondary-details">
+
+                    <h2 class="condition">Clear</h2>
+
+                    <div class="high-low">
+                        <div class="row">
+                            <p class="bold">High:</p>
+                            <p class="high">29°C</p>
+                        </div>
+
+                        <div class="row">
+                            <p class="bold">Low:</p>
+                            <p class="low">17°C</p>
+                        </div>
+                        
+                    </div>
+        
+
+                    <div class="details">
+                        <div class="col">
+                            <img src="images/humidity.png" class="detail-icon" alt="Icon depicting humidity">
+                            <div>
+                                <p class="bold">Humidity</p>
+                                <p class="humidity">50%</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="images/wind.png" class="detail-icon" alt="Icon depicting humidity">
+                            <div>
+                                <p class="bold">Wind Speed</p>
+                                <p class="wind">11 km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+   <script src="js/scripts.js"></script>
+
+   <footer>
+        <p>Powered by <a href="https://openweathermap.org" target="_blank">OpenWeather</a></p>
+        
+   </footer>
+</body>
+</html>
